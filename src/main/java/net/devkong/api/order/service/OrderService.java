@@ -10,7 +10,7 @@ import java.util.Optional;
 @Component
 public interface OrderService {
     List<Order> findAll();
-    Optional<Order> getById(Long id);
+    Optional<Order> findById(Long id);
     void save(Order order);
     boolean existsById(Long id);
     Long count();

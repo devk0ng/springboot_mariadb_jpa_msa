@@ -9,7 +9,7 @@ import java.util.Optional;
 @Component
 public interface UserService {
     List<User> findAll();
-    Optional<User> getById(Long id);
+    Optional<User> findById(Long id);
     void save(User user);
     boolean existsById(Long id);
     Long count();
